@@ -13,14 +13,10 @@ def run_script(script_name):
         print(f"Error running {script_name}: {e}")
 
 run_script('forward.py')
-time.sleep(5)
-run_script('trigger.py')
 print("Forward Trigger Initiated")
 time.sleep(20)#Delaying next step by 20 secs.
 run_script('dataForward.py')
 run_script('reverse.py')
-time.sleep(5)
-run_script('trigger.py')
 print("Reverse Trigger Initiated")
 time.sleep(20)
 run_script('dataReverse.py')
